@@ -11,9 +11,14 @@ body {
 .avatar {
     width: 150px;
     filter: drop-shadow(5px 5px);
+    transition: all 0.3s ease;
+    transform-origin: center;
 }
-.avatar:hover{
-    width: 180px;
+
+.avatar:hover {
+    transform: scale(1.05); /* Similar to the vision board hover effect */
+    filter: drop-shadow(7px 7px); /* Increased shadow on hover */
+    cursor: pointer;
 }
 
 .card {
